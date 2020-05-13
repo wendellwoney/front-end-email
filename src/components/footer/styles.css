@@ -1,0 +1,14 @@
+.footer-conteiner {
+    background: #fff;
+    width: 100vw;
+    border-top: #efefef solid 1px;
+    padding: 15px 15px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center
+}
+
+.footer-conteiner span{
+    color: #7e8285;
+}
