@@ -16,3 +16,18 @@ body {
 hr {
     border: 1px solid #efefef;
 }
+
+.button {
+    background: #2163ad;
+    color: #fff;
+    border: none;
+    height: 39px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.button:hover {
+    opacity: 95%;
+}

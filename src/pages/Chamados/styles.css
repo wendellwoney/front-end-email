@@ -1,0 +1,115 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: "menu chamado reader";
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container .menu {
+    grid-area: menu;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.container .menu .new {
+    border-right: #efefef solid 1px;
+    border-bottom: #efefef solid 1px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container .menu .menuList {
+    border-right: #efefef solid 1px;
+    background: #fff;
+    height: 100vh;
+}
+
+.container .menu .menuList ul {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container .menu .menuList ul li {
+    padding: 10px;
+    transform: all 0.2s;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .menu .menuList ul li:hover {
+    background: #f9fafb;
+}
+
+.container .menu .menuList ul li span {
+    margin-right: 10px;
+    text-decoration: none;
+
+    border-radius: 50px;
+    border:#efefef solid 1px;
+    padding: 3px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.container .menu .menuList ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #72777a;
+}
+
+.container .menu .menuList ul li a:hover {
+    color: #4ca6f5;
+}
+
+.container .chamado {
+    height: 100vh;
+    grid-area: chamado;
+    background-color: #000;
+}
+
+.container .reader {
+    height: 100vh;
+    grid-area: reader;
+    background-color: chartreuse;
+}
+
+.bg-purple {
+    background: #ede7f6;
+    font-weight: 500;
+    color: #512da8;
+}
+
+.bg-green {
+    background: #e8f5e9;
+    font-weight: 500;
+    color: #388e3c;
+}
+
+.bg-blue {
+    background: #e3f2fd;
+    font-weight: 500;
+    color: #1976da;
+}
+
+.bg-red {
+    background: #ffebee;
+    font-weight: 500;
+    color: #d32f2f;
+}
+
+.container.containerMenu {
+    display: grid;
+    grid-template-areas: "chamado reader";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container.containerMenu .menu {
+    grid-area: chamado;
+    visibility: hidden;
+}

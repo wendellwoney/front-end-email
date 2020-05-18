@@ -3,6 +3,7 @@ import { FiMenu, FiUsers, FiPower, FiUser } from 'react-icons/fi'
 
 import './styles.css';
 import { menuTop } from '../../assets/js/menuTop';
+import { menuLateral } from '../../assets/js/menuLateral';
 
 import Logo from '../../assets/img/logo.png';
 
@@ -12,7 +13,7 @@ export default function Header() {
             <header>
                 <div className="left">
                     <img src={Logo} alt="Assistente de chamados"/>
-                    <FiMenu className="menu-icon" size={18} color="#72777a"/>
+                    <FiMenu onClick={menuLateral} className="menu-icon" size={18} color="#72777a"/>
                 </div>
                 <div className="right">
                     <div className="avatar" onClick={menuTop}>
